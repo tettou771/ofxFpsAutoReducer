@@ -2,11 +2,14 @@
 
 This is addon for openFrameworks.
 
-FrameRate Reduce to battery saving.
+Reduce frameRate to battery saving. 
 
 The addon changes FPS when no mouse move, no key press.
 
-FPS is comeback when mose moved, key pressed.
+FPS is comeback when mose moved, or key pressed.
+
+Suitable for applications that only work with mouse or keyboard.
+
 
 # Usage
 
