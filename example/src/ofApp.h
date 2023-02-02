@@ -9,6 +9,4 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
-    
-    float fps, pastUpdate;
 };

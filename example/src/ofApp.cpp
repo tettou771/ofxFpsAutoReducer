@@ -20,22 +20,16 @@ void ofApp::setup(){
      ofxFpsAutoReducer::addSleepSetting(ofxFpsAutoReducer::SleepSetting(5., 5));
      ofxFpsAutoReducer::addSleepSetting(ofxFpsAutoReducer::SleepSetting(60., 2));
     */
-    
-    pastUpdate = 0;
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-    // Get realtime FPS
-    float now = ofGetElapsedTimef();
-    fps = 1. / (now - pastUpdate);
-    pastUpdate = now;
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
     // Show current fps
-    ofDrawBitmapString("FPS: " + ofToString(fps), 50, 50);
+    ofDrawBitmapString("FPS: " + ofToString(ofGetTargetFrameRate()), 50, 50);
     
     // Circle follows your cursor.
     // It move smooth, because FPS get highest when mouse moving.
