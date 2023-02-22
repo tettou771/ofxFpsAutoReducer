@@ -19,6 +19,7 @@ void ofxFpsAutoReducer::setup(bool withDefaultSettings) {
     ofAddListener(ofEvents().mousePressed, singleton, &ofxFpsAutoReducer::m_mouseEvent);
     ofAddListener(ofEvents().mouseDragged, singleton, &ofxFpsAutoReducer::m_mouseEvent);
     ofAddListener(ofEvents().mouseReleased, singleton, &ofxFpsAutoReducer::m_mouseEvent);
+    ofAddListener(ofEvents().mouseScrolled, singleton, &ofxFpsAutoReducer::m_mouseEvent);
 
     if (withDefaultSettings) {
         setNormalFps(60);
