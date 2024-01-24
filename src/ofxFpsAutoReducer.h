@@ -31,6 +31,7 @@ public:
     static void setup(bool withDefaultSettings = true);
     static void setNormalFps(int fps);
     static int getNormalFps();
+    static void addSleepSetting(const float time, const float fps);
     static void addSleepSetting(const SleepSetting &s);
     static void clearSleepSettings();
     static vector<SleepSetting> getSleepSettings();

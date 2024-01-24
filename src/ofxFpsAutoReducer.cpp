@@ -67,6 +67,10 @@ int ofxFpsAutoReducer::getNormalFps() {
     return singleton->normalFps;
 }
 
+void ofxFpsAutoReducer::addSleepSetting(const float time, const float fps) {
+    SleepSetting(time, fps);
+}
+
 void ofxFpsAutoReducer::addSleepSetting(const SleepSetting &s) {
     if (!singleton) setup(false);
     
