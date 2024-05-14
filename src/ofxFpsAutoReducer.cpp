@@ -34,6 +34,8 @@ void ofxFpsAutoReducer::setup(bool withDefaultSettings) {
 }
 
 void ofxFpsAutoReducer::m_update(ofEventArgs &args) {
+    if (sleepSettings.empty()) return;
+    
     float elapsed = ofGetElapsedTimef() - lastCursorMoveTime;
 
     auto s = sleepSettings.end() - 1;
